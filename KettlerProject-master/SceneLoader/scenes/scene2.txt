@@ -1,0 +1,10 @@
+Terrain, 256, 256, Scene1\terrain1.png, Scene1\terrain2.png, Scene1\terrain3.png, -10, 10
+Bike, Bike,Scene1\bike_anim.fbx,Armature|Fietsen
+//Panel, 
+Node, Tree1, 10, 0, 50, 0, 50, true, Scene1\tree1.obj
+Node, Tree2, 10, -50, 0, 0, 50, true, Scene1\tree2.obj
+Node, Tree3, 10, -50, 0, -50, 0, true, Scene1\tree3.obj
+Node, Tree4, 10, 0, 50, -50, 0, true, Scene1\tree4.obj
+Water, Water, 50, 50 ,1.0,25,25,0.1
+Route, default, 4.0
+Time, start, 10.5

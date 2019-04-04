@@ -1,0 +1,102 @@
+
+-------------------------------------	nog te doen	--------------------------------------
+JAKRO
+-	De fietsweerstand aan kunnen passen op basis van invoer van de dokter														Jakro
+-   meer scenes aanmaken (en laten inladen)																						Jakro
+-	Alle authenticaties van clienten opslaan en inladen als bestanden															Jakro
+-	Een noodstop uitvoeren (indien hij ziet dat een cliënt niet goed wordt)														Jakro
+
+
+SASSJA
+-	De fietsweerstand aan kunnen passen op basis van de VRScene																	Sassja			
+-	Een gegevens van een gegenereerde route opvagen (XYroute) en laten zien														Sassja
+
+
+CASTIN (MOET NOG ONDERLING VERDEELD WORDEN)
+-	Een VR scene weergeven waar de gebruiker doorheen beweegt
+-	De snelheid op de VR afhankelijk maken van de VR (RPM)																		Castin																	
+-	Informatie van de fiets (snelheid) in VR laten zien																			Castin
+-	De huidige, relevante, gegevens weergeven in de VR-scene																	Castin
+[ONDERLING ONDERVERDEELD WORDEN > EVENTUEEL NAAR BAKT]
+-	Historische Data van clienten naar de dokter doorsturen indien hierom gevraagd wordt										Castin						
+-	Data van clienten opslaan zodat ze later aan de arts getoond kunnen worden													Castin
+-	De historische gegevens van een cliënt opvragen																				Castin
+-	Overzicht van alle laatste sessies opvragen																					Castin
+-	Het kunnen ophalen van de huidige scene (naam opvragen)																		Castin
+							
+
+
+BAKT
+-	Een trainings-sessie met een cliënt starten en stoppen																		Bakt
++	Het eventueel switchen tussen scenes	(SceneIdentifier)																		
+-	Killswitch																													Bart
+
+
+SNICKKEL														
++	serverGUI																													sNickkel
+	- laten zien van authenticaties (doctoren toevoegen)
+	- verbreken van connectie in de server/dataserver/client
+	- foutmeldingen uitlezen en servers/clienten resetten			
+-	Commentaar toevoegen bij alle methodes (en #BlameCode toevoegen als je niet snapt)											(sNickkel)		
+-	Testplan																													(sNickkel?)(Jakro)
+-	protocoldocument					(wireshark met encryptie en zonder encryptie)											(verbeteren(opnieuw!)) (sNickkel?)
+
+
+
+
+
+
+
+
+
+--------------------------------------	klaar	-------------------------------------------
+
+
+BIKEREADER
+-	Verbinding maken met de fiets																						x
+-	Data van de fiets naar de server doorsturen																			x
+
+VIRTUALREALITY
+-	Een simpele scene op de VR-bril laten zien 																			x						
+-	Niet hardcoded locaties van bestanden																				x
+-	Controleren of datachecker response geen keyevent is																x
+-	print statements verwijderen en code opschonen																		X		Sassja
+-	Documentatie bij VR scene document																					X		Sassja
+-	Het kunnen selecteren van een bepaalde scene																		X		Sassja
+-	Scan open verbindingen																								x		Bart
+-	Hack																											
+
+CLIENT
+-	Verbindingen van cliëntapplicaties aannemen																			x
+-	Data van clienten opslaan																							x
+-	Verbindingen van cliënten identificeren																				x
+-	Realtime data van clienten naar de dokter streamen																	x														
+-	De oefening van cliënt(en) beïnvloeden (weerstand aanpassen)														x		Jakro
+
+
+SERVER/DOCTOR
+-	Beveiligd inloggen op de server																						x
+-	Meerdere cliënten tegelijk monitoren																				x
+-	De huidige status van actieve cliënten monitoren in de vorm van grafieken											x		sNickkel		
+-	De huidige status van actieve clienten monitoren in de vorm van tekst												x
+-	SSLstream																											x
+-	Communicatie tussen dokter en cliënt verzorgen																		X		Bakt	
+
+-	Communiceren d.m.v. tekst naar een individuele cliënt																X		Bakt	
+-	Communiceren d.m.v. tekst naar alle cliënten tegelijkertijd (broadcast)												X		Bakt
+
+-	Opvragen van alle beschikbare Doctoren/patienten die verbonden zijn													x
+-	opslaan van alle berichten en notifyen op nieuw bericht (opslaan in lijst en syncen bij event naar GUI (delegate))	X		Bakt
+	-	Voor tekstmessages moet een nieuwe klasse ontworpen worden (opslaan van namen) --> of int id omzetten naar naam	x		Bakt
+		opslaan van naam en id en deze automatisch overal laten bijwerken zodra nieuwe verbinding (betere manier)
+
+-	Delegates invoeren ipv eventhandlers en de verbinding hiervan optimalizeren (this.invoke in forms (multithreading))	x		Bakt
+-	Verbinding verbeteren (gelijktijdig versturen ? => meerdere sockets ?) of check of al gestuurd word					x		Bakt
+
+
+Nick	
+-	code commentaar toevoegen																1.5 uur		
+-	serverGUI			(hulp van bart, met richtlijnen)									4 uur		
+-	testplan			(met hulp van Jakro)												2 uur					
+-	protocoldocument	(DataServer klasse)	 (na verbeteringen van Bart)(wireshark)			1.5 uur		
+

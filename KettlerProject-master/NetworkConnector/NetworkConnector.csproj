@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7944304B-925F-4962-98AA-DA93AAFBFD9E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetworkConnector</RootNamespace>
+    <AssemblyName>NetworkConnector</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Build\18-10\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>NetworkConnector.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>88F9A0E0E7C14C6083B21EBEE52E0DEAC82EFAA7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Pluralsight.Crypto, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pluralsight.Crypto.1.1.0\lib\net35\Pluralsight.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connector.cs" />
+    <Compile Include="DataServer.cs" />
+    <Compile Include="Doctor_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_GUI.Designer.cs">
+      <DependentUpon>Doctor_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encryptor.cs" />
+    <Compile Include="DoctorClient.cs" />
+    <Compile Include="log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log_in.Designer.cs">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientClient.cs" />
+    <Compile Include="Patient_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_GUI.Designer.cs">
+      <DependentUpon>Patient_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerClient.cs" />
+    <Compile Include="ServerClientGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerClientGUI.Designer.cs">
+      <DependentUpon>ServerClientGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerData.cs" />
+    <Compile Include="StatisticsGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsGUI.Designer.cs">
+      <DependentUpon>StatisticsGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPController.cs" />
+    <Compile Include="Training.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="scenes\models\bike.blend" />
+    <None Include="scenes\models\bike.blend1" />
+    <None Include="scenes\models\bike.fbx" />
+    <None Include="scenes\models\bike_anim.fbx" />
+    <None Include="scenes\models\tree1.mtl" />
+    <None Include="scenes\models\tree1.obj" />
+    <None Include="scenes\models\tree10.mtl" />
+    <None Include="scenes\models\tree10.obj" />
+    <None Include="scenes\models\tree2.mtl" />
+    <None Include="scenes\models\tree2.obj" />
+    <None Include="scenes\models\tree3.mtl" />
+    <None Include="scenes\models\tree3.obj" />
+    <None Include="scenes\models\tree4.mtl" />
+    <None Include="scenes\models\tree4.obj" />
+    <None Include="scenes\models\tree5.mtl" />
+    <None Include="scenes\models\tree5.obj" />
+    <None Include="scenes\models\tree6.mtl" />
+    <None Include="scenes\models\tree6.obj" />
+    <None Include="scenes\models\tree7.mtl" />
+    <None Include="scenes\models\tree7.obj" />
+    <None Include="scenes\READ ME.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KettlerReader\KettlerReader.csproj">
+      <Project>{ae66e4db-5585-4f61-a9e9-d1bc33eb08ae}</Project>
+      <Name>KettlerReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VRController\VRController.csproj">
+      <Project>{b7b4e61a-997e-46c2-84a5-aa7b4e7e2de6}</Project>
+      <Name>VRController</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Doctor_GUI.resx">
+      <DependentUpon>Doctor_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_in.resx">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_GUI.resx">
+      <DependentUpon>Patient_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerClientGUI.resx">
+      <DependentUpon>ServerClientGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsGUI.resx">
+      <DependentUpon>StatisticsGUI.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\codecracker.CSharp.1.0.1\analyzers\dotnet\cs\CodeCracker.Common.dll" />
+    <Analyzer Include="..\packages\codecracker.CSharp.1.0.1\analyzers\dotnet\cs\CodeCracker.CSharp.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="CERTENROLLLib">
+      <Guid>{728AB348-217D-11DA-B2A4-000E7BBB2B09}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.png" />
+    <Content Include="scenes\scene2\background.wav" />
+    <Content Include="scenes\scene2\terrain1.png" />
+    <Content Include="scenes\scene2\thumbnail.png" />
+    <None Include="Resources\logo.png" />
+    <Content Include="scenes\scene1\background.wav" />
+    <Content Include="scenes\models\bike_B.png" />
+    <Content Include="scenes\models\bike_C.png" />
+    <Content Include="scenes\models\bike_S.png" />
+    <Content Include="scenes\models\heightmap2.jpg" />
+    <Content Include="scenes\models\heightmap3.jpg" />
+    <Content Include="scenes\models\terrain1.png" />
+    <Content Include="scenes\models\terrain2.png" />
+    <Content Include="scenes\models\terrain3.png" />
+    <Content Include="scenes\models\Tree_01.png" />
+    <Content Include="scenes\models\Tree_02.png" />
+    <Content Include="scenes\models\Tree_03.png" />
+    <Content Include="scenes\models\Tree_04.png" />
+    <Content Include="scenes\models\Tree_05.png" />
+    <Content Include="scenes\models\Tree_06.png" />
+    <Content Include="scenes\models\Tree_07.png" />
+    <Content Include="scenes\models\Tree_10_Tree.png" />
+    <Content Include="scenes\scene1.txt" />
+    <Content Include="scenes\scene1\terrain1.png" />
+    <Content Include="scenes\scene1\terrain2.png" />
+    <Content Include="scenes\scene1\terrain3.png" />
+    <Content Include="scenes\scene2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

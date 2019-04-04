@@ -1,0 +1,28 @@
+imagename, scene2\thumbnail.png, stretchimage
+description, A desert wasteland with just some old abandoned houses. Sometimes magic water will apear.
+Terrain, 256, 256, scene2\terrain1.png, textures\terrain\adesert_mntn_d.jpg, textures\terrain\adesert_cracks_d.jpg, -10, 10
+Bike, Bike,models\bike\bike_anim.fbx,Armature|Fietsen 
+Node, Tree1, 20, 0, 50, 0, 50, true, models\houses\set1\house1.obj
+Node, Tree2, 10, -50, 0, 0, 50, true,models\houses\set1\house2.obj
+Node, Tree3, 40, -50, 0, -50, 0, true, models\houses\set1\house3.obj
+Node, Tree4, 5, 0, 50, -50, 0, true, models\houses\set1\house4.obj
+Node, Tree5, 50, 25,45,25,45,true,models\houses\set1\house5.obj
+Water, Water, 10, 10 ,1.0,5,5,0.1
+Panel
+Route, default, 0.0
+//Route, custom, -80, 0, -80, 10, 0, -10
+//Route, custom, -60, 0, -80, 10, 0, 10
+//Route, custom, -60, 0, -60, -10, 0, 10
+//Route, custom, -80, 0, -60, -10, 0, -10,true
+//Route, custom, 52, 0, 40, 10, 0, 10
+//Route, custom, 52, 0, 140, 10, 0, 10
+//Route, custom, 152, 0, 140, 10, 0, -10
+//Route, custom, 152, 0, 40, -10, 0, 10,true
+//Route, custom, 135, 0, 170, -10, 0, 10
+//Route, custom, 135, 0, 125, -10, 0, 10
+//Route, custom, 30, 0, 125, 10, 0, 10
+//Route, custom, 30, 0, 205, 10, 0, 10
+//Route, custom, 215, 0, 205, 10, 0, -10
+//Route, custom, 215, 0, 40, -10, 0, 10,true
+//Route, custom, 4, 0, 40, -10, 0, 10,true
+Time, start, 10.5

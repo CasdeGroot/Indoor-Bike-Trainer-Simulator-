@@ -1,0 +1,23 @@
+imagename, scene3\thumbnail.png, stretchimage
+description, water world fack dis description
+Terrain, 128, 128, scene2\terrain1.png, textures\terrain\island_sand2_d.jpg, textures\terrain\adesert_cracks_d.jpg, -10, 10
+Bike, Bike,models\bike\bike_anim.fbx,Armature|Fietsen 
+Water, Water, 10, 10 ,1.0,25,25,0.1
+Panel
+Route, default, 4.0
+//Route, custom, -80, 0, -80, 10, 0, -10
+//Route, custom, -60, 0, -80, 10, 0, 10
+//Route, custom, -60, 0, -60, -10, 0, 10
+//Route, custom, -80, 0, -60, -10, 0, -10,true
+//Route, custom, 52, 0, 40, 10, 0, 10
+//Route, custom, 52, 0, 140, 10, 0, 10
+//Route, custom, 152, 0, 140, 10, 0, -10
+//Route, custom, 152, 0, 40, -10, 0, 10,true
+//Route, custom, 135, 0, 170, -10, 0, 10
+//Route, custom, 135, 0, 125, -10, 0, 10
+//Route, custom, 30, 0, 125, 10, 0, 10
+//Route, custom, 30, 0, 205, 10, 0, 10
+//Route, custom, 215, 0, 205, 10, 0, -10
+//Route, custom, 215, 0, 40, -10, 0, 10,true
+//Route, custom, 4, 0, 40, -10, 0, 10,true
+//Time, start, 10.5

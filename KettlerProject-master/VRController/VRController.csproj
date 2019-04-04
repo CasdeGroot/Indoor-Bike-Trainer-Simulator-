@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7B4E61A-997E-46C2-84A5-AA7B4E7E2DE6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VRController</RootNamespace>
+    <AssemblyName>VRController</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SceneSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SceneSelector.Designer.cs">
+      <DependentUpon>SceneSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VRSceneHandler.cs" />
+    <Compile Include="VRRoute.cs" />
+    <Compile Include="VRPanel.cs" />
+    <Compile Include="BruteForce.cs" />
+    <Compile Include="Legacy_Code\Bart_Memoires\BikePanel.cs" />
+    <Compile Include="Legacy_Code\Bart_Memoires\Node.cs" />
+    <Compile Include="Legacy_Code\Bart_Memoires\DayTime.cs" />
+    <Compile Include="Legacy_Code\Bart_Memoires\VRConnector.cs" />
+    <Compile Include="NetworkConnector.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VRNode.cs" />
+    <Compile Include="VRTerrain.cs" />
+    <Compile Include="VRTime.cs" />
+    <Compile Include="VRConnector.cs" />
+    <Compile Include="VRConnector_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VRConnector_GUI.Designer.cs">
+      <DependentUpon>VRConnector_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy_Code\VR_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy_Code\VR_GUI.Designer.cs">
+      <DependentUpon>VR_GUI.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="scenes\models\bike.blend" />
+    <None Include="scenes\models\bike.blend1" />
+    <None Include="scenes\models\bike.fbx" />
+    <None Include="scenes\models\bike_anim.fbx" />
+    <None Include="scenes\models\tree1.mtl" />
+    <None Include="scenes\models\tree1.obj" />
+    <None Include="scenes\models\tree10.mtl" />
+    <None Include="scenes\models\tree10.obj" />
+    <None Include="scenes\models\tree2.mtl" />
+    <None Include="scenes\models\tree2.obj" />
+    <None Include="scenes\models\tree3.mtl" />
+    <None Include="scenes\models\tree3.obj" />
+    <None Include="scenes\models\tree4.mtl" />
+    <None Include="scenes\models\tree4.obj" />
+    <None Include="scenes\models\tree5.mtl" />
+    <None Include="scenes\models\tree5.obj" />
+    <None Include="scenes\models\tree6.mtl" />
+    <None Include="scenes\models\tree6.obj" />
+    <None Include="scenes\models\tree7.mtl" />
+    <None Include="scenes\models\tree7.obj" />
+    <None Include="scenes\READ ME.pdf" />
+    <None Include="scenes\scene1\bike.blend" />
+    <None Include="scenes\scene1\bike.blend1" />
+    <None Include="scenes\scene1\bike.fbx" />
+    <None Include="scenes\scene1\bike_anim.fbx" />
+    <None Include="scenes\scene1\tree1.mtl" />
+    <None Include="scenes\scene1\tree1.obj" />
+    <None Include="scenes\scene1\tree10.mtl" />
+    <None Include="scenes\scene1\tree10.obj" />
+    <None Include="scenes\scene1\tree2.mtl" />
+    <None Include="scenes\scene1\tree2.obj" />
+    <None Include="scenes\scene1\tree3.mtl" />
+    <None Include="scenes\scene1\tree3.obj" />
+    <None Include="scenes\scene1\tree4.mtl" />
+    <None Include="scenes\scene1\tree4.obj" />
+    <None Include="scenes\scene1\tree5.mtl" />
+    <None Include="scenes\scene1\tree5.obj" />
+    <None Include="scenes\scene1\tree6.mtl" />
+    <None Include="scenes\scene1\tree6.obj" />
+    <None Include="scenes\scene1\tree7.mtl" />
+    <None Include="scenes\scene1\tree7.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SceneSelector.resx">
+      <DependentUpon>SceneSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VRConnector_GUI.resx">
+      <DependentUpon>VRConnector_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy_Code\VR_GUI.resx">
+      <DependentUpon>VR_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scenes\models\bike_B.png" />
+    <Content Include="scenes\models\bike_C.png" />
+    <Content Include="scenes\models\bike_S.png" />
+    <Content Include="scenes\models\heightmap2.jpg" />
+    <Content Include="scenes\models\heightmap3.jpg" />
+    <Content Include="scenes\models\terrain1.png" />
+    <Content Include="scenes\models\terrain2.png" />
+    <Content Include="scenes\models\terrain3.png" />
+    <Content Include="scenes\models\Tree_01.png" />
+    <Content Include="scenes\models\Tree_02.png" />
+    <Content Include="scenes\models\Tree_03.png" />
+    <Content Include="scenes\models\Tree_04.png" />
+    <Content Include="scenes\models\Tree_05.png" />
+    <Content Include="scenes\models\Tree_06.png" />
+    <Content Include="scenes\models\Tree_07.png" />
+    <Content Include="scenes\models\Tree_10_Tree.png" />
+    <Content Include="scenes\scene1.txt" />
+    <Content Include="scenes\scene1\bike_B.png" />
+    <Content Include="scenes\scene1\bike_C.png" />
+    <Content Include="scenes\scene1\bike_S.png" />
+    <Content Include="scenes\scene1\heightmap2.jpg" />
+    <Content Include="scenes\scene1\heightmap3.jpg" />
+    <Content Include="scenes\scene1\terrain1.png" />
+    <Content Include="scenes\scene1\terrain2.png" />
+    <Content Include="scenes\scene1\terrain3.png" />
+    <Content Include="scenes\scene1\Tree_01.png" />
+    <Content Include="scenes\scene1\Tree_02.png" />
+    <Content Include="scenes\scene1\Tree_03.png" />
+    <Content Include="scenes\scene1\Tree_04.png" />
+    <Content Include="scenes\scene1\Tree_05.png" />
+    <Content Include="scenes\scene1\Tree_06.png" />
+    <Content Include="scenes\scene1\Tree_07.png" />
+    <Content Include="scenes\scene1\Tree_10_Tree.png" />
+    <Content Include="scenes\scene2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KettlerReader\KettlerReader.csproj">
+      <Project>{ae66e4db-5585-4f61-a9e9-d1bc33eb08ae}</Project>
+      <Name>KettlerReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KettlerReader\KettlerReader.csproj">
+      <Project>{ae66e4db-5585-4f61-a9e9-d1bc33eb08ae}</Project>
+      <Name>KettlerReader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\codecracker.CSharp.1.0.1\analyzers\dotnet\cs\CodeCracker.Common.dll" />
+    <Analyzer Include="..\packages\codecracker.CSharp.1.0.1\analyzers\dotnet\cs\CodeCracker.CSharp.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,22 @@
+imagename, scene1\thumbnail.png, stretchimage
+description, This is a lovely scene which shows a lot of trees and has a lake.
+Terrain, 256, 256, scene1\terrain1.png, textures\terrain\grass_green_d.jpg, textures\terrain\grass_ground_d.jpg, -10, 10
+Bike, Bike,models\bike\bike_anim.fbx,Armature|Fietsen 
+Node, Tree1, 30, -43, 71, -58, -39, true, models\trees\fantasy\tree1.obj
+Node, Tree2, 30, -102, 98, 88, 98, true, models\trees\fantasy\tree2.obj
+Node, Tree3, 10, -79, -39, 3, 48, true, models\trees\fantasy\tree3.obj
+Node, Tree4, 10, 12, 52, -8, 34, true, models\trees\fantasy\tree4.obj
+//Water, Water, 10, 10 ,1.0,25,25,0.1
+Panel
+//Route, default, 0.0
+Route, custom, -76, 0, -88, -10, 0, 10
+Route, custom, -76, 0, -21, 10, 0, 10
+Route, custom, 62, 0, -21, 10, 0, 10
+Route, custom, 62, 0, 42, -10, 0, 10
+Route, custom, 7, 0, 42, -10, 0, -10
+Route, custom, 7, 0, -3, -10, 0, -10
+Route, custom, -92, 0, -3, -10, 0, 10
+Route, custom, -92, 0, 77, 10, 0, 10
+Route, custom, 87, 0, 77, 10, 0, -10
+Route, custom, 87, 0, -88, -10, 0, -10,true
+Time, start, 10.5
